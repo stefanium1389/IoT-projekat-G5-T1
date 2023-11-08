@@ -287,3 +287,18 @@ poetry.toml
 pyrightconfig.json
 
 # End of https://www.toptal.com/developers/gitignore/api/python,pycharm
+Projekat/.idea/misc.xml
+Projekat/.idea/workspace.xml
+Projekat/Projekat/pyvenv.cfg
+Projekat/Projekat/Scripts/activate
+Projekat/Projekat/Scripts/activate.bat
+Projekat/Projekat/Scripts/Activate.ps1
+Projekat/Projekat/Scripts/deactivate.bat
+Projekat/Projekat/Scripts/pip.exe
+Projekat/Projekat/Scripts/pip3.11.exe
+Projekat/Projekat/Scripts/pip3.9.exe
+Projekat/Projekat/Scripts/pip3.exe
+Projekat/Projekat/Scripts/python.exe
+Projekat/Projekat/Scripts/python_d.exe
+Projekat/Projekat/Scripts/pythonw.exe
+Projekat/Projekat/Scripts/pythonw_d.exe

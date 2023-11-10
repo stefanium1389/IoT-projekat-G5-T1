@@ -1,5 +1,6 @@
 import components.dht as dht
 import components.led as led
+import components.buzzer as buzzer
 import settings as stg
 
 
@@ -14,7 +15,8 @@ def func_door_ultrasonic_sensor():
     print("3")
 
 def func_door_buzzer():
-    print("4")
+    settings = stg.load_settings()
+    buzzer.run_door_buzzer(settings)
 
 def func_door_motion_sensor():
     print("5")

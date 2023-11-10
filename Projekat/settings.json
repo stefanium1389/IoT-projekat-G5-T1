@@ -1,6 +1,10 @@
 {
-    "RDHT1": {
+    "RDH1": {
         "simulated": true,
         "pin": 17
-    } 
+    },
+    "DL": {
+        "simulated": true,
+        "pin": 18
+    }
 }

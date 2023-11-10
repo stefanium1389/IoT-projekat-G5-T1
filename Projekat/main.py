@@ -1,4 +1,5 @@
 import components.dht as dht
+import components.led as led
 import settings as stg
 
 
@@ -6,7 +7,8 @@ def func_door_sensor():
     print("1")
 
 def func_door_light():
-    print("2")
+    settings = stg.load_settings()
+    led.run_door_led(settings)
 
 def func_door_ultrasonic_sensor():
     print("3")

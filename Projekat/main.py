@@ -4,17 +4,21 @@ import components.buzzer as buzzer
 import components.ultrasound as ultrasound
 import components.ds1 as ds1
 import components.dpir1 as dpir1
+import components.dms as dms
 import components.rpir1 as rpir1
 import components.rpir2 as rpir2
 import settings as stg
 
 
 def func_door_sensor():
-    ds1.run_ds1()
+    settings = stg.load_settings()
+    ds1.run_ds1(settings)
+
 
 def func_door_light():
     settings = stg.load_settings()
     led.run_door_led(settings)
+
 
 def func_door_ultrasonic_sensor():
     settings = stg.load_settings()
@@ -25,19 +29,27 @@ def func_door_buzzer():
     settings = stg.load_settings()
     buzzer.run_door_buzzer(settings)
 
+
 def func_door_motion_sensor():
-    dpir1.run_dpir1()
+    settings = stg.load_settings()
+    dpir1.run_dpir1(settings)
+
 
 def func_door_membrane_switch():
-    print("6")
+    settings = stg.load_settings()
+    dms.run_dms(settings)
+
 
 def func_room_pir():
-    rpir1.run_rpir1()
-    rpir2.run_rpir2()
+    settings = stg.load_settings()
+    rpir1.run_rpir1(settings)
+    rpir2.run_rpir2(settings)
+
 
 def func_room_dht():
     settings = stg.load_settings()
     dht.run_rdht1(settings)
+
 
 def main():
     odgovor = 1
@@ -70,6 +82,7 @@ def main():
             func_room_pir()
         if(odgovor == 8):
             func_room_dht()
+
 
 if __name__ == '__main__':
     main()

@@ -12,4 +12,4 @@ def pir_scan(pin, name):
 
     GPIO.add_event_detect(PIR_PIN, GPIO.RISING, callback=pir_print(name))
 
-    input("Input any key to continue...")
+    input("Input any key to continue..." + name + "\n")

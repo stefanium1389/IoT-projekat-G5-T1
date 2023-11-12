@@ -12,4 +12,4 @@ def button_scan(pin, name):
 
     GPIO.add_event_detect(PORT_BUTTON, GPIO.RISING, callback=button_print(name), bouncetime=100)
 
-    input("Input any key to continue...")
+    input("Input any key to continue..." + name + "\n")
